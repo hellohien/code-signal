@@ -1,13 +1,10 @@
 function shapeArea(n) {
-  if(n === 1){
-    return 1
-  } else{
-
+  let area = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i === 1) {
+      area = 1
+    }
+    area += ((i - 1) * 4)
   }
+  return area;
 }
-
-// n(1) = 1
-// n(2) = 5  -> 4. n(2) = n(1) + ((2-1) * 4) = 5
-// n(3) = 13 -> 8. n(3) = n(2) + ((3-1) * 4) = 8
-// n(4) = 25 -> 12
-// n(5) = 41 -> 16
